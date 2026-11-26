@@ -17,6 +17,7 @@ namespace EmployeeScaleDemo.Controllers
                     Math.Round(process.WorkingSet64 / 1024.0 / 1024.0, 2);
             }
 
+
             return View();
         }
 
