@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Azure Scale Up and Scale Out Lab";
+}
+
+<div class="container mt-5">
+    <h1>Azure App Service Scaling Demo</h1>
+
+    <p>
+        This application is deployed to Azure App Service.
+    </p>
+
+    <div class="card p-4 mt-4">
+        <h3>Application Instance Information</h3>
+
+        <p>
+            <strong>Machine Name:</strong>
+            @ViewBag.MachineName
+        </p>
+
+        <p>
+            <strong>Visible Processor Count:</strong>
+            @ViewBag.ProcessorCount
+        </p>
+
+        <p>
+            <strong>Application Process Memory (MB):</strong>
+            @ViewBag.MemoryMB
+        </p>
+    </div>
+
+    <div class="alert alert-info mt-4">
+        We will use Azure Portal to compare
+        Scale Up and Scale Out.
+    </div>
+</div>
